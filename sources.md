@@ -1,0 +1,42 @@
+---
+layout: default
+title: Official Sources
+description: Official product documentation used to maintain the Agentic Mac Starter Guide.
+---
+
+<p class="eyebrow">Maintenance reference</p>
+
+# Official sources
+
+The product-specific instructions were last reviewed on **26 July 2026**. Interfaces and requirements change, so check these sources before revising the guide.
+
+## OpenAI
+
+- [Download ChatGPT](https://chatgpt.com/download/)
+- [ChatGPT macOS app requirements](https://help.openai.com/en/articles/9275200-using-the-chatgpt-macos-app)
+- [Codex app documentation](https://developers.openai.com/codex/app/)
+- [Codex authentication](https://developers.openai.com/codex/auth/)
+- [Codex projects and local folders](https://developers.openai.com/codex/projects/)
+- [Codex permission modes](https://developers.openai.com/codex/permission-modes/)
+
+## Anthropic
+
+- [Download Claude Desktop](https://claude.com/download)
+- [Install Claude Desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop)
+- [Claude Code desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart)
+- [Claude Code desktop reference](https://code.claude.com/docs/en/desktop)
+- [Claude Code authentication](https://code.claude.com/docs/en/authentication)
+
+## Node.js
+
+- [Download Node.js](https://nodejs.org/en/download)
+- [Node.js release schedule](https://github.com/nodejs/Release#release-schedule)
+- [Supported Node.js platforms](https://github.com/nodejs/node/blob/main/BUILDING.md#platform-list)
+
+## Maintenance principles
+
+- Link to stable download pages rather than versioned installer files.
+- Say **LTS** instead of embedding a Node version in beginner instructions.
+- Test the complete flow with a new macOS user account.
+- Keep Intel and Apple Silicon details out of the main path unless a download or compatibility requirement diverges.
+- Update the "last checked" date only after testing or verifying all linked requirements.

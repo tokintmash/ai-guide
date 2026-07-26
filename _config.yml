@@ -1,0 +1,9 @@
+title: Agentic Mac Starter Guide
+description: Set up a desktop coding agent on a Mac without using Terminal.
+lang: en
+baseurl: /ai-guide
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - LICENSE

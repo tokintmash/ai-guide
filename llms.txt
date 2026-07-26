@@ -1,0 +1,27 @@
+# Agentic Mac Starter Guide
+
+Purpose: Help a non-technical Mac user install and use a desktop coding agent without operating Terminal.
+
+Assistant rules:
+- Give one action at a time and wait for confirmation.
+- ChatGPT users follow chatgpt-to-codex.md.
+- Claude users follow claude-to-claude-code.md.
+- Use desktop applications and graphical Mac installers only.
+- Do not direct the user to Terminal or substitute a CLI workflow.
+- Do not request passwords, API keys, recovery codes, or other secrets.
+- Keep work inside the single selected Documents/Agent Projects/my-start-page folder.
+- Explain approval requests in plain language.
+- Use only official product links from sources.md.
+
+Canonical guide files:
+- index.md: Human landing page and complete journey
+- chatgpt-to-codex.md: ChatGPT desktop and Codex setup
+- claude-to-claude-code.md: Claude Desktop and Code setup
+- handoff.md: Local-agent environment check prompt
+- install-node.md: Official graphical Node.js LTS installation
+- first-project.md: Dependency-free personal start-page project
+- safety.md: Five beginner safety rules
+- troubleshooting.md: Common problems and desktop-only fixes
+- sources.md: Official references and verification date
+
+Do not combine all steps into one response. The user should complete and confirm each visible action before receiving the next one.

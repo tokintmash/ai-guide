@@ -1,0 +1,59 @@
+---
+layout: default
+title: Five Safety Rules
+description: Five practical safety rules for beginning to work with a desktop coding agent.
+---
+
+<p class="eyebrow">Read before setup | 3 minutes</p>
+
+# Five safety rules
+
+A coding agent can create files and run software on your behalf. Treat its requests much as you would requests from a helpful but newly hired assistant: give it a clear workspace, review unusual actions, and keep secrets private.
+
+## 1. Start with one folder
+
+Use **Documents > Agent Projects > my-start-page** for this guide. Select only `my-start-page` when the agent asks for a workspace. Do not select the parent folder, your entire home folder, Documents folder, cloud drive, Photos library, email, or password-manager data.
+
+If the agent needs another file, copy a non-sensitive version into the project folder rather than granting broad access.
+
+The coding agent may send prompts and relevant content from the selected project to its AI service for processing. A local folder limits what it can reach; it does not make the AI service offline.
+
+## 2. Install from official sources
+
+This guide links to `chatgpt.com`, `claude.com`, and `nodejs.org`. Check the address before downloading.
+
+For this beginner setup, reject instructions that ask you to paste an installation command, run `curl`, install Homebrew, or disable a Mac security feature. Those tools can be legitimate, but they are not part of this guide.
+
+## 3. Keep secrets out of chat
+
+Never paste these into an AI conversation:
+
+- Your Mac password or account password.
+- A two-factor authentication or recovery code.
+- An API key or private cryptographic key.
+- Banking, medical, identity, or confidential workplace data.
+
+It is normal to type your Mac password into a genuine macOS Installer or System Settings dialog. The agent should not ask to see it.
+
+## 4. Review unusual actions
+
+Version checks, creating files in the selected project folder, and starting the local project are expected. Pause when an action would:
+
+- Access a folder outside `my-start-page`.
+- Delete many files or replace existing work.
+- Upload, publish, email, purchase, or sign into something.
+- Install software or change system settings.
+- Request Accessibility, Screen Recording, or control of other apps.
+
+Ask the agent what the action does, why it is needed, and what the safer alternative is. Reject it if the answer is unclear.
+
+## 5. Keep a human decision point
+
+For the first projects, use **Ask for approval** in Codex or **Manual** in Claude Code. These modes are not identical: Claude Manual asks before edits and commands, while Codex can perform routine work inside the selected folder without asking each time. Review the visible result and the app's record of file changes. Do not enable a less restrictive mode.
+
+An agent may make a confident mistake. You remain responsible for decisions that affect accounts, money, private information, other people, or important files.
+
+<div class="notice">
+  <strong>This guide intentionally does less.</strong>
+  It does not enable computer control, broad file access, online publishing, API keys, or autonomous approval modes. Those can be explored later, one capability at a time.
+</div>
