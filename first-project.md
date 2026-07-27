@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Build Your First Project
-description: Ask Codex or Claude Code to build a personal local start page with Node.js.
+description: Ask Codex or Claude Code to build a personal local start page with Node.js on Mac or Windows.
 ---
 
 <p class="eyebrow">First project | About 15 minutes</p>
 
 # Build a personal start page
 
-This project is a small website available only on your Mac. It requires no account, database, deployment service, or third-party code packages.
+This project is a small website available only on your computer. It requires no account, database, deployment service, or third-party code packages.
 
 You will see the full agentic loop: describe a result, let the agent create and run it, inspect the result, and ask for a revision.
 
@@ -26,7 +26,7 @@ Before writing files, ask me these three things, one question at a time:
 
 After I answer, build a polished personal start page using plain HTML, CSS, and JavaScript. Make it work well on both a laptop and a phone-sized screen. Do not use frameworks, external fonts, analytics, or third-party packages.
 
-Add a very small local server using only Node.js built-in features, plus a simple start command. Make the server listen only on `127.0.0.1` so other devices on my network cannot reach it. Start the site, test that it loads, and show me the local preview. Keep all files inside `my-start-page`. Explain any approval request in plain language before asking me to accept it.
+Add a very small local server in a file named `server.mjs` using only Node.js built-in features. Make the server listen only on `127.0.0.1` so other devices on my network cannot reach it. Start it directly with `node server.mjs`; do not use npm, npx, or a package script to start it. Test that the site loads and show me the local preview. Keep all files inside `my-start-page`. Explain any approval request in plain language before asking me to accept it.
 ```
 
 ## 2. Review the plan and approvals
@@ -38,6 +38,11 @@ The agent should first ask for your preferences. Claude in Manual mode should re
 - Open or preview a local address such as `http://localhost:3000`.
 
 Those actions fit this project. Stop and ask for an explanation if it proposes installing packages, accessing another personal folder, using a network address other than `127.0.0.1` or `localhost`, or publishing anything online.
+
+<div class="notice">
+  <strong>Windows may show a firewall question.</strong>
+  This project uses only <code>127.0.0.1</code>, so it does not need inbound access from private or public networks. If Windows asks whether to let Node.js communicate through the firewall, choose <strong>Cancel</strong>. The local browser preview should still work.
+</div>
 
 ## 3. Inspect the result
 
@@ -68,7 +73,7 @@ When you are done, say:
 Stop the local server if it is still running. Then summarize what we made, tell me where the project files are, and explain how I can open and continue this project in a future session. Do not make any more changes.
 ```
 
-The files remain in **Documents > Agent Projects > my-start-page**. You can reopen that folder in Codex or Claude Code whenever you want to continue.
+The files remain in **Documents > Agent Projects > my-start-page** in Finder or File Explorer. You can reopen that folder in Codex or Claude Code whenever you want to continue.
 
 <div class="checkpoint">
   <strong>You have completed the guide.</strong>

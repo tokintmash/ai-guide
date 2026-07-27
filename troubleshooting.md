@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Get Unstuck
-description: Plain-language fixes for common Codex, Claude Code, Node.js, and local project setup problems.
+description: Plain-language fixes for common Codex, Claude Code, Node.js, Mac, and Windows setup problems.
 ---
 
-<p class="eyebrow">Troubleshooting | No Terminal required</p>
+<p class="eyebrow">Troubleshooting | No command line required</p>
 
 # Get unstuck
 
@@ -28,6 +28,15 @@ The current app combines ChatGPT and Codex. Do not install an unofficial app wit
 
 Claude Chat and Claude Code are different workspaces in the same desktop app. This guide uses **Code**.
 
+## Claude Code on Windows says Git is missing
+
+1. Download Git only from the [official Git for Windows page](https://git-scm.com/download/win).
+2. Run its graphical installer and keep the recommended options.
+3. Quit Claude Desktop completely after installation.
+4. Reopen Claude from the Start menu and return to Code.
+
+You do not need to open Git Bash or type a Git command. Claude Code uses Git behind the scenes.
+
 ## macOS will not open the downloaded app
 
 Delete the download and return to the official download page linked by this guide. Do not disable Gatekeeper or other Mac security features. If a work or school Mac blocks installation, its administrator may need to approve the app.
@@ -36,30 +45,38 @@ Delete the download and return to the official download page linked by this guid
 
 Some older Macs cannot install the macOS version required by the current desktop agent or Node.js. If Software Update says the Mac is up to date but **About This Mac** still shows a version below the guide's requirement, stop here. This desktop-only edition has no safe fallback for that Mac.
 
+## Windows blocks the downloaded installer
+
+Delete the installer and download it again from the official page linked by this guide. Do not turn off Microsoft Defender, bypass SmartScreen for an unknown publisher, or change a Windows security policy. A managed work or school PC may require its administrator to approve the app.
+
+## I have Windows 10
+
+This edition uses Windows 11 as its supported baseline. Windows 10 support differs between the desktop agents and current developer tools, and ordinary Windows 10 reached the end of its standard support. Check **Settings > Windows Update** for a Windows 11 upgrade. If the PC cannot upgrade, this guide does not provide a CLI or WSL fallback.
+
 ## The app asks for file access
 
-Allow access only when the dialog identifies the `my-start-page` folder you selected. If it asks for the parent `Agent Projects` folder, the whole Documents folder, or another personal location, cancel and return to the app's folder selection.
+Allow access only when the dialog identifies the `my-start-page` folder you selected. If it asks for the parent `Agent Projects` folder, the whole Documents folder, your Windows user profile, or another personal location, cancel and return to the app's folder selection.
 
-## The app asks for Screen Recording or Accessibility
+## The app asks to see or control other applications
 
-Choose **Not Now**, **Deny**, or cancel. Those permissions support optional computer-control features and are not required for this guide.
+Choose **Not Now**, **Deny**, or cancel. On Mac these may appear as Screen Recording or Accessibility permissions. Both desktop apps also have optional computer-control features. None are required for this guide.
 
 ## Node is still missing after installation
 
-1. Confirm the macOS Installer reported success.
+1. Confirm the macOS package installer or Windows MSI installer reported success.
 2. Quit the entire ChatGPT or Claude desktop app.
-3. Open the app again from Applications.
+3. On Mac, open the app again from Applications. On Windows, open it from the Start menu.
 4. Reopen the local workspace.
-5. Ask the agent to run `node --version` and `npm --version` again.
+5. Ask the agent to repeat the Node and npm version checks for the current operating system.
 
-Do not install a second copy through another method. If the checks still fail, tell the agent where the `.pkg` came from and ask it to diagnose without changing anything.
+Do not install a second copy through another method. If the checks still fail, tell the agent whether you used the official `.pkg` or `.msi` and ask it to diagnose without changing anything.
 
-## The agent wants me to use Terminal
+## The agent wants me to use a command line
 
 Reply with:
 
 ```text
-I am following a desktop-only guide and will not operate Terminal. Run necessary read-only checks through your own tools. If an installation needs a graphical Mac installer, give me the official page and guide me through the windows instead.
+I am following a desktop-only guide and will not operate Terminal, PowerShell, Command Prompt, Git Bash, or WSL. Run necessary read-only checks through your own tools. If an installation needs a graphical installer, give me the official page and guide me through the installer windows instead.
 ```
 
 ## The local preview does not open
@@ -67,6 +84,8 @@ I am following a desktop-only guide and will not operate Terminal. Run necessary
 Ask the agent to check whether its server is still running and whether it reported a different local address. A local address usually begins with `http://localhost:` followed by a number.
 
 If the chosen number is already in use, the agent can stop its own process or choose another number. It should not stop unrelated applications without asking.
+
+On Windows, the first Node.js server may trigger a Windows Firewall dialog. This guide's server listens only on `127.0.0.1` and does not need private or public network access, so choose **Cancel**. If the preview still fails, ask the agent to confirm that it used `127.0.0.1` and started the server directly with `node server.mjs`.
 
 ## The project looks broken
 

@@ -9,7 +9,7 @@ description: Install Claude Desktop and open a safe local Claude Code workspace 
 # From Claude to Claude Code
 
 <div class="status-line">
-  <span>Last checked: 26 July 2026</span>
+  <span>Last checked: 27 July 2026</span>
   <span>Guide requires: macOS 13.5 or later</span>
   <span>Uses: Code in Claude Desktop</span>
 </div>
@@ -39,7 +39,7 @@ You do not need to identify whether the Mac has an Intel or Apple processor. Cla
 5. Open `Agent Projects` and create another new folder inside it.
 6. Name the new folder `my-start-page`.
 
-Claude Code will receive access to `my-start-page`, not the whole Documents folder or even the parent `Agent Projects` folder. For future projects, make and select a separate folder for each one.
+Claude Code will use `my-start-page` as its working directory. Manual mode asks before edits and commands, but the selected folder is not a hard filesystem sandbox. Reject any request to reach outside it unless you understand and approve the reason. For future projects, make and select a separate folder for each one.
 
 ## 3. Install the official app
 

@@ -9,7 +9,7 @@ description: Install the ChatGPT desktop app and open a safe local Codex workspa
 # From ChatGPT to Codex
 
 <div class="status-line">
-  <span>Last checked: 26 July 2026</span>
+  <span>Last checked: 27 July 2026</span>
   <span>Requires: macOS 14 or later</span>
   <span>Uses: ChatGPT desktop app</span>
 </div>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Five Safety Rules
-description: Five practical safety rules for beginning to work with a desktop coding agent.
+description: Five practical safety rules for beginning to work with a desktop coding agent on Mac or Windows.
 ---
 
 <p class="eyebrow">Read before setup | 3 minutes</p>
@@ -12,28 +12,28 @@ A coding agent can create files and run software on your behalf. Treat its reque
 
 ## 1. Start with one folder
 
-Use **Documents > Agent Projects > my-start-page** for this guide. Select only `my-start-page` when the agent asks for a workspace. Do not select the parent folder, your entire home folder, Documents folder, cloud drive, Photos library, email, or password-manager data.
+Use **Documents > Agent Projects > my-start-page** for this guide. Select only `my-start-page` when the agent asks for a workspace. Do not select the parent folder, your entire user folder, Documents folder, cloud drive, photo library, email, or password-manager data.
 
 If the agent needs another file, copy a non-sensitive version into the project folder rather than granting broad access.
 
-The coding agent may send prompts and relevant content from the selected project to its AI service for processing. A local folder limits what it can reach; it does not make the AI service offline.
+The coding agent may send prompts and relevant content from the selected project to its AI service for processing. Selecting one local folder clearly defines the intended working scope, but it is not a hard sandbox in every app. Reject requests to reach outside it. A local project also does not make the AI service offline.
 
 ## 2. Install from official sources
 
-This guide links to `chatgpt.com`, `claude.com`, and `nodejs.org`. Check the address before downloading.
+This guide links to `chatgpt.com`, `claude.com`, `nodejs.org`, and, on the Windows Claude route, `git-scm.com`. Check the address before downloading.
 
-For this beginner setup, reject instructions that ask you to paste an installation command, run `curl`, install Homebrew, or disable a Mac security feature. Those tools can be legitimate, but they are not part of this guide.
+For this beginner setup, reject instructions that ask you to paste an installation command, run `curl`, install Homebrew, use winget or Chocolatey, or disable an operating-system security feature. Those tools can be legitimate, but they are not part of this guide.
 
 ## 3. Keep secrets out of chat
 
 Never paste these into an AI conversation:
 
-- Your Mac password or account password.
+- Your computer password or account password.
 - A two-factor authentication or recovery code.
 - An API key or private cryptographic key.
 - Banking, medical, identity, or confidential workplace data.
 
-It is normal to type your Mac password into a genuine macOS Installer or System Settings dialog. The agent should not ask to see it.
+It is normal to approve a genuine macOS Installer or Windows User Account Control dialog. If administrator credentials are required, enter them only in the operating system's own security dialog. The agent should not ask to see them.
 
 ## 4. Review unusual actions
 
