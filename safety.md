@@ -12,7 +12,7 @@ A coding agent can create files and run software on your behalf. Treat its reque
 
 ## 1. Start with one folder
 
-Use **Documents > Agent Projects > my-start-page** for this guide. Select only `my-start-page` when the agent asks for a workspace. Do not select the parent folder, your entire user folder, Documents folder, cloud drive, photo library, email, or password-manager data.
+When your route tells you to prepare a workspace, create `Agent Projects`, then `my-start-page`, inside Documents. Select only `my-start-page` as the workspace. If Windows places Documents under OneDrive, do not select OneDrive itself. Do not select the parent folder, your entire user folder, Documents, a photo library, email, or password-manager data.
 
 If the agent needs another file, copy a non-sensitive version into the project folder rather than granting broad access.
 

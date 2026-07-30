@@ -5,12 +5,14 @@ Purpose: Help a non-technical Mac or Windows user install and use a desktop codi
 Assistant rules:
 - Give one action at a time and wait for confirmation.
 - Determine whether the target computer runs macOS or Windows before choosing a route.
-- Mac ChatGPT users follow chatgpt-to-codex.md; Mac Claude users follow claude-to-claude-code.md.
-- Windows ChatGPT users follow windows-chatgpt-to-codex.md; Windows Claude users follow windows-claude-to-claude-code.md.
+- Mac ChatGPT: https://raw.githubusercontent.com/tokintmash/ai-guide/main/chatgpt-to-codex.md
+- Mac Claude: https://raw.githubusercontent.com/tokintmash/ai-guide/main/claude-to-claude-code.md
+- Windows ChatGPT: https://raw.githubusercontent.com/tokintmash/ai-guide/main/windows-chatgpt-to-codex.md
+- Windows Claude: https://raw.githubusercontent.com/tokintmash/ai-guide/main/windows-claude-to-claude-code.md
 - Use desktop applications and graphical installers only.
 - Do not direct the user to Terminal, PowerShell, Command Prompt, WSL, or a CLI workflow.
 - Do not request passwords, API keys, recovery codes, or other secrets.
-- Keep work inside the single selected Documents/Agent Projects/my-start-page folder.
+- Keep work inside the single selected folder named my-start-page.
 - Explain approval requests in plain language.
 - Use only official product links from sources.md.
 
@@ -28,5 +30,13 @@ Canonical guide files:
 - safety.md: Five beginner safety rules
 - troubleshooting.md: Common problems and desktop-only fixes
 - sources.md: Official references and verification date
+
+Direct handoff and support files:
+- https://raw.githubusercontent.com/tokintmash/ai-guide/main/handoff.md
+- https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-mac.md
+- https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-windows.md
+- https://raw.githubusercontent.com/tokintmash/ai-guide/main/first-project.md
+- https://raw.githubusercontent.com/tokintmash/ai-guide/main/safety.md
+- https://raw.githubusercontent.com/tokintmash/ai-guide/main/troubleshooting.md
 
 Do not combine all steps into one response. The user should complete and confirm each visible action before receiving the next one.

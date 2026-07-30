@@ -8,7 +8,7 @@ description: Official product documentation used to maintain the Agentic Desktop
 
 # Official sources
 
-The product-specific instructions were last reviewed on **27 July 2026**. Interfaces and requirements change, so check these sources before revising the guide.
+The Windows Codex instructions were last reviewed on **29 July 2026**. Interfaces and requirements change, so check these sources before revising the guide.
 
 ## OpenAI
 
@@ -40,6 +40,12 @@ The product-specific instructions were last reviewed on **27 July 2026**. Interf
 ## Windows prerequisites
 
 - [Download Git for Windows](https://git-scm.com/download/win)
+- [WinGet and App Installer](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
+- [Install and update App Installer](https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer)
+- [App Installer in Microsoft Store](https://apps.microsoft.com/detail/9nblggh4nns1)
+- [OneDrive Known Folder Move](https://learn.microsoft.com/en-us/sharepoint/redirect-known-folders)
+- [Windows file and folder naming](https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file)
+- [Create a new folder in Windows](https://support.microsoft.com/en-us/windows/create-a-new-folder-cbbfb6f5-59dd-4e5d-95f6-a12577952e17)
 - [Windows 10 support lifecycle](https://support.microsoft.com/en-us/windows/windows-10-support-ends-on-october-14-2025-2ca8b313-1946-43d3-b55c-2b95b107f281)
 - [Windows Installer and User Account Control](https://learn.microsoft.com/en-us/windows/win32/msi/using-windows-installer-with-uac)
 

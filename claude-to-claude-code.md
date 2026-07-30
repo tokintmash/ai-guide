@@ -84,5 +84,5 @@ Manual mode lets you review proposed file changes and commands before they happe
 <div class="next-step">
   <h2>Move into the local agent</h2>
   <p>The browser assistant has finished its part. The next page contains the handoff prompt for Claude Code.</p>
-  <a class="button" href="../handoff/">Continue to the handoff</a>
+  <a class="button" href="https://tokintmash.github.io/ai-guide/handoff/">Continue to the handoff</a>
 </div>

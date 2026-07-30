@@ -51,7 +51,13 @@ Delete the installer and download it again from the official page linked by this
 
 ## I have Windows 10
 
-This edition uses Windows 11 as its supported baseline. Windows 10 support differs between the desktop agents and current developer tools, and ordinary Windows 10 reached the end of its standard support. Check **Settings > Windows Update** for a Windows 11 upgrade. If the PC cannot upgrade, this guide does not provide a CLI or WSL fallback.
+This edition uses Windows 11 as its supported baseline. OpenAI describes Codex support on Windows 10 as best effort and requires version 1809 or newer in practice because Codex depends on modern console support. Open **Start**, select **Settings**, then select **Windows Update** and install the available Windows 10 updates before trying Codex. If the PC cannot run Windows 11, this guide does not provide a CLI or WSL fallback.
+
+## Codex says WinGet is missing
+
+WinGet is part of Microsoft's **App Installer** system component. Do not use the Installed apps list as the check and do not open a command-line application. Open [App Installer in the Microsoft Store](https://apps.microsoft.com/detail/9nblggh4nns1), then install or update it. Return to ChatGPT when the Store shows it as installed, then retry the Codex action that reported the error.
+
+OpenAI says WinGet should be available, but this guide checks it only when Codex reports a problem rather than making it a routine gate. Codex's stronger Windows sandbox uses lower-privilege users, filesystem permissions, firewall rules, and local Windows policy; App Installer does not provide those sandbox protections.
 
 ## The app asks for file access
 
@@ -95,4 +101,4 @@ Tell the agent what is visibly wrong and ask it to inspect the browser errors, f
 
 Ask the agent to stop and explain exactly what changed. Do not ask it to "undo everything" until it has identified the affected files and actions. If private information may have been uploaded or a credential exposed, change that credential from the relevant service immediately.
 
-For product-specific help, use the [official sources](../sources/) rather than third-party download or support sites.
+For product-specific help, use the [official sources](https://tokintmash.github.io/ai-guide/sources/) rather than third-party download or support sites.

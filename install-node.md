@@ -11,13 +11,13 @@ description: Choose the graphical Node.js LTS installer instructions for Mac or 
 Choose the operating system on the computer where Codex or Claude Code is running. Both routes use the official graphical Node.js LTS installer and require no user-operated command line.
 
 <div class="path-grid">
-  <a class="path-card" href="../install-node-mac/">
+  <a class="path-card" href="https://tokintmash.github.io/ai-guide/install-node-mac/">
     <span class="card-number">01</span>
     <h2>Install on Mac</h2>
     <p>Use the universal macOS package installer.</p>
     <span class="card-action">Open the Mac instructions ></span>
   </a>
-  <a class="path-card" href="../install-node-windows/">
+  <a class="path-card" href="https://tokintmash.github.io/ai-guide/install-node-windows/">
     <span class="card-number">02</span>
     <h2>Install on Windows</h2>
     <p>Choose the x64 or ARM64 Windows installer.</p>

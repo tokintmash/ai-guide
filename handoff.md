@@ -43,8 +43,8 @@ If the agent reports version numbers for both tools, continue directly to the fi
 
 If the agent says either tool is missing, use the graphical Node installer page for your operating system. You will not need a command-line application.
 
-<a class="button" href="../first-project/">Node is ready: start the project</a>
-<a class="button secondary" href="../install-node/">Node is missing: install it</a>
+<a class="button" href="https://tokintmash.github.io/ai-guide/first-project/">Node is ready: start the project</a>
+<a class="button secondary" href="https://tokintmash.github.io/ai-guide/install-node/">Node is missing: install it</a>
 
 <div class="checkpoint">
   <strong>What success looks like</strong>

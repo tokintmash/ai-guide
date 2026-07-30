@@ -15,13 +15,13 @@ description: Set up Codex or Claude Code on Mac or Windows without using command
 Choose the operating system on the computer where the agent will work. The next page will use the assistant you already have.
 
 <div class="path-grid">
-  <a class="path-card" href="mac/">
+  <a class="path-card" href="https://tokintmash.github.io/ai-guide/mac/">
     <span class="card-number">01</span>
     <h2>I use a Mac</h2>
     <p>Follow the macOS route with Codex or Claude Code.</p>
     <span class="card-action">Continue with Mac ></span>
   </a>
-  <a class="path-card" href="windows/">
+  <a class="path-card" href="https://tokintmash.github.io/ai-guide/windows/">
     <span class="card-number">02</span>
     <h2>I use Windows</h2>
     <p>Follow the Windows 11 route with Codex or Claude Code.</p>
@@ -43,7 +43,7 @@ You can also follow the pages yourself. The instructions are the same.
 
 <ul class="compact-list">
   <li>An active ChatGPT subscription for the Codex route, or an active Claude subscription with Claude Code access for the Claude route</li>
-  <li>A supported Mac or a fully updated Windows 11 PC</li>
+  <li>A supported Mac or a Windows 11 PC</li>
   <li>A computer account allowed to install applications</li>
   <li>A reliable internet connection</li>
   <li>About 30-45 minutes</li>
@@ -69,4 +69,4 @@ The result is not published to the web, no website account is needed, and the ex
 5. Install Node.js with its normal graphical installer if it is missing.
 6. Build and revise your personal start page.
 
-Before beginning, read the [five safety rules](safety/). They are short and apply to any coding agent.
+Before beginning, read the [five safety rules](https://tokintmash.github.io/ai-guide/safety/). They are short and apply to any coding agent.

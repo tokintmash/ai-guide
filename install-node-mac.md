@@ -64,5 +64,5 @@ Restarting the app allows it to see software that was installed after the app op
 <div class="next-step">
   <h2>Node is ready</h2>
   <p>Return to the local agent and give it a small, visible job.</p>
-  <a class="button" href="../first-project/">Build the first project</a>
+  <a class="button" href="https://tokintmash.github.io/ai-guide/first-project/">Build the first project</a>
 </div>

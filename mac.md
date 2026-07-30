@@ -11,13 +11,13 @@ description: Choose the Mac desktop coding agent that matches your existing assi
 There is no model or provider decision to make. Continue with the subscription and assistant you already use.
 
 <div class="path-grid">
-  <a class="path-card" href="../chatgpt-to-codex/">
+  <a class="path-card" href="https://tokintmash.github.io/ai-guide/chatgpt-to-codex/">
     <span class="card-number">01</span>
     <h2>I use ChatGPT</h2>
     <p>Install the ChatGPT desktop app and use its Codex workspace on your Mac.</p>
     <span class="card-action">Set up Codex ></span>
   </a>
-  <a class="path-card" href="../claude-to-claude-code/">
+  <a class="path-card" href="https://tokintmash.github.io/ai-guide/claude-to-claude-code/">
     <span class="card-number">02</span>
     <h2>I use Claude</h2>
     <p>Install Claude Desktop and use its Code workspace on your Mac.</p>
