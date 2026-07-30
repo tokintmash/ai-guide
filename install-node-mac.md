@@ -44,7 +44,7 @@ The official package works on supported Intel and Apple Silicon Macs. You do not
 Return to the same local Codex or Claude Code conversation. Do not send this message to the old setup conversation. Paste:
 
 ```text
-The official Node.js macOS package installer finished successfully. Please check `node --version` and `npm --version` again. Do not install or upgrade anything else.
+The official Node.js macOS package installer finished successfully. Please check `node --version` and `npm --version` again. Do not install or upgrade anything else. When both checks pass, resume the Agentic Desktop Starter Guide where we left off and lead me into the first project; do not wait for me to provide another command.
 ```
 
 If the agent still cannot find Node:
@@ -63,6 +63,6 @@ Restarting the app allows it to see software that was installed after the app op
 
 <div class="next-step">
   <h2>Node is ready</h2>
-  <p>Return to the local agent and give it a small, visible job.</p>
-  <a class="button" href="https://tokintmash.github.io/ai-guide/first-project/">Build the first project</a>
+  <p>The local agent should now ask what title you want and continue leading the project.</p>
+  <a class="button" href="https://tokintmash.github.io/ai-guide/first-project/">Follow along with the first project</a>
 </div>

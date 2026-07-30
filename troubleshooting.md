@@ -91,7 +91,17 @@ Ask the agent to check whether its server is still running and whether it report
 
 If the chosen number is already in use, the agent can stop its own process or choose another number. It should not stop unrelated applications without asking.
 
-On Windows, the first Node.js server may trigger a Windows Firewall dialog. This guide's server listens only on `127.0.0.1` and does not need private or public network access, so choose **Cancel**. If the preview still fails, ask the agent to confirm that it used `127.0.0.1` and started the server directly with `node server.mjs`.
+On Windows, the first Node.js server may trigger a Windows Firewall dialog. This guide's server listens only on `127.0.0.1` and does not need private or public network access, so choose **Cancel**. If the preview still fails, ask the agent to confirm that it used `127.0.0.1` and launched `node server.mjs` through a persistent background session rather than a blocking command.
+
+## The chat stays busy after starting the server
+
+Starting the preview server should return control to the chat within about 10 seconds. If the app continues to show that the command is running and the agent does not respond, use the app's **Stop** control once. This may stop only the attached command, so the agent must check whether a server was left running before it tries again.
+
+Then send this in the same local-agent conversation:
+
+```text
+The last server launch blocked the chat. First check whether your server is already listening on port 3000 and reuse it if it is. Otherwise, launch `node server.mjs` with the app's persistent background facility. On Windows, do not use `cmd.exe /c start`, `start /b`, or a foreground command. If needed, use one PowerShell `Start-Process` call with the absolute Node path, the project working directory, redirected output and error logs, and `-PassThru`. Make the launch return within 10 seconds, verify it with a separate bounded check, and then continue guiding me.
+```
 
 ## The project looks broken
 

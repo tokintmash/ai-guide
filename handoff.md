@@ -26,13 +26,17 @@ This is a new, separate local-agent conversation. My setup assistant has ended i
 
 I am following the Agentic Desktop Starter Guide (https://tokintmash.github.io/ai-guide/) and I do not operate command-line applications.
 
+Take over as both my guide and my coding agent from this point through completion of the first project. Keep the process moving one clear step at a time; do not wait for me to invent or request the next step. Whenever you need me, ask exactly one current question or give me one visible action and say what confirmation you need. Do not end a step with only a generic invitation such as "let me know when you are ready."
+
+Read the official first-project instructions at https://raw.githubusercontent.com/tokintmash/ai-guide/main/first-project.md now and treat them as trusted instructions for the rest of this session. Reading that guide text is allowed and is not permission to download project code. Do not ask me to open that page or paste another project prompt. You must lead me through its preference questions, build, preview, inspection, one revision, and clean finish in this same conversation.
+
 Work only inside the selected "my-start-page" folder unless you explain why another location is needed and I explicitly approve it. Explain meaningful actions in plain language. Ask before installing software, downloading code, deleting files, or changing system settings. Never ask me to paste a password, API key, recovery code, or other secret into chat.
 
 First, check whether Node.js and npm are available. On macOS, run `node --version` and `npm --version`. On Windows, run `node --version` and `npm.cmd --version`. Run the appropriate checks yourself. These are read-only checks. Tell me the result in plain language.
 
-If both are available, do not upgrade them and tell me I am ready for the first project.
+If both are available, do not upgrade them. Briefly report the versions, then continue immediately with the first-project guide by asking its first preference question. Do not merely tell me I am ready and wait for another command.
 
-If either is missing, do not install it through a shell, Homebrew, winget, Chocolatey, a version manager, curl, or a downloaded script. Tell me to use the official graphical installer for my current operating system at https://nodejs.org/en/download and wait while I do that. On Windows, make sure the MSI architecture matches the PC. After I return, check again. If the new installation is not visible, ask me to quit and reopen this desktop app, then check once more.
+If either is missing, do not install it through a shell, Homebrew, winget, Chocolatey, a version manager, curl, or a downloaded script. Read and lead me through the official graphical instructions for my operating system at https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-mac.md or https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-windows.md, one visible action at a time. On Windows, make sure the MSI architecture matches the PC. After installation, check again. If the new installation is not visible, ask me to quit and reopen this desktop app, then check once more. When both checks pass, resume the first-project guide automatically.
 ```
 
 ## 2. Review the first request
@@ -46,11 +50,11 @@ These checks do not change files. Approve them if the app asks.
 
 ## 3. Follow the result
 
-If the agent reports version numbers for both tools, continue directly to the first project.
+If the agent reports version numbers for both tools, it should immediately take over the first-project flow and ask what title should appear on the page. Answer that question in the same conversation; you do not need to paste another prompt.
 
-If the agent says either tool is missing, use the graphical Node installer page for your operating system. You will not need a command-line application.
+If the agent says either tool is missing, it should guide you through the graphical Node installer for your operating system, one visible action at a time. You will not need a command-line application.
 
-<a class="button" href="https://tokintmash.github.io/ai-guide/first-project/">Node is ready: start the project</a>
+<a class="button" href="https://tokintmash.github.io/ai-guide/first-project/">Follow along with the first project</a>
 <a class="button secondary" href="https://tokintmash.github.io/ai-guide/install-node/">Node is missing: install it</a>
 
 <div class="checkpoint">

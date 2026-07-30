@@ -26,7 +26,7 @@ Canonical guide files:
 - claude-to-claude-code.md: Mac Claude Desktop and Code setup
 - windows-chatgpt-to-codex.md: Windows ChatGPT desktop and Codex setup
 - windows-claude-to-claude-code.md: Windows Claude Desktop and Code setup
-- handoff.md: Local-agent environment check prompt
+- handoff.md: Local-agent takeover, environment check, and first-project continuation prompt
 - install-node.md: Operating-system choice for Node.js installation
 - install-node-mac.md and install-node-windows.md: Graphical Node.js LTS installation
 - first-project.md: Dependency-free personal start-page project
