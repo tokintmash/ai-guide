@@ -15,7 +15,7 @@ description: Install the ChatGPT desktop app and open a safe native Codex worksp
 </div>
 
 <div class="assistant-note">
-Guide the user through one numbered section at a time and wait for confirmation. Do not ask the user to open PowerShell, Command Prompt, Windows Terminal, or WSL. If a label differs from this page, ask the user to describe what they see rather than guessing. Use only the official download button below. It may open the Microsoft Store or OpenAI's documented, Store-signed installer from <strong>get.microsoft.com</strong>; stop for any other download source.
+Guide the user through one numbered section at a time and wait for confirmation. Do not ask the user to open PowerShell, Command Prompt, Windows Terminal, or WSL. If a label differs from this page, ask the user to describe what they see rather than guessing. Use only the official download button below. It may open the Microsoft Store or OpenAI's documented, Store-signed installer from <strong>get.microsoft.com</strong>; stop for any other download source. After the user confirms the section 4 checkpoint, tell them to stop using this setup conversation, switch to the Codex conversation in the ChatGPT desktop app, and paste the next page's handoff prompt there. Then end your guidance; do not continue into the handoff or first project.
 </div>
 
 Codex is part of the current ChatGPT desktop app. It runs natively on Windows; this route does not require WSL, a separate Codex program, or an API key.
@@ -80,7 +80,7 @@ Folder-name capitalization does not matter on ordinary Windows folders, so `Agen
 </div>
 
 <div class="next-step">
-  <h2>Move into the local agent</h2>
-  <p>The browser assistant has finished its part. The next page contains the shared handoff prompt.</p>
+  <h2>Switch to Codex in the desktop app</h2>
+  <p>Stop using the setup-assistant conversation now; its role is finished. In the ChatGPT desktop app, switch to the Codex conversation with <code>my-start-page</code> selected. The next page contains the prompt to paste there. Do not paste it into ordinary ChatGPT chat.</p>
   <a class="button" href="https://tokintmash.github.io/ai-guide/handoff/">Continue to the handoff</a>
 </div>

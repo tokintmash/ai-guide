@@ -15,7 +15,7 @@ description: Install the ChatGPT desktop app and open a safe local Codex workspa
 </div>
 
 <div class="assistant-note">
-Guide the user through one numbered section at a time and wait for confirmation. Do not ask the user to open Terminal. If a label differs from this page, ask the user to describe what they see rather than guessing. Stop if the download is not from <strong>chatgpt.com</strong> or <strong>openai.com</strong>.
+Guide the user through one numbered section at a time and wait for confirmation. Do not ask the user to open Terminal. If a label differs from this page, ask the user to describe what they see rather than guessing. Stop if the download is not from <strong>chatgpt.com</strong> or <strong>openai.com</strong>. After the user confirms the section 4 checkpoint, tell them to stop using this setup conversation, switch to the Codex conversation in the ChatGPT desktop app, and paste the next page's handoff prompt there. Then end your guidance; do not continue into the handoff or first project.
 </div>
 
 Codex is part of the ChatGPT desktop app. You do not need an API key or a separate model-provider account.
@@ -81,7 +81,7 @@ If the project control has different wording, choose the option that opens a loc
 </div>
 
 <div class="next-step">
-  <h2>Move into the local agent</h2>
-  <p>The browser assistant has finished its part. The next page contains the handoff prompt for Codex.</p>
+  <h2>Switch to Codex in the desktop app</h2>
+  <p>Stop using the setup-assistant conversation now; its role is finished. In the ChatGPT desktop app, switch to the Codex conversation with <code>my-start-page</code> attached. The next page contains the prompt to paste there. Do not paste it into ordinary ChatGPT chat.</p>
   <a class="button" href="https://tokintmash.github.io/ai-guide/handoff/">Continue to the handoff</a>
 </div>

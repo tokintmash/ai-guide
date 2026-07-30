@@ -34,7 +34,7 @@ Choose the operating system on the computer where the agent will work. The next 
 Send your assistant the address of this guide or its public GitHub repository, followed by this message:
 
 ```text
-Read the Agentic Desktop Starter Guide at the link I just shared. First determine whether I am setting up a Mac or Windows computer, then choose the route that matches you as my current assistant. Guide me through it one action at a time. Assume I can install desktop apps and navigate folders, but I do not use command-line applications. Wait for me to confirm each action before continuing.
+Read the Agentic Desktop Starter Guide at the link I just shared. First determine whether I am setting up a Mac or Windows computer, then choose the route that matches you as my current assistant. Guide me through it one action at a time. Assume I can install desktop apps and navigate folders, but I do not use command-line applications. Wait for me to confirm each action before continuing. When the local workspace is ready, clearly tell me to stop using this setup conversation and switch to the Codex or Claude Code conversation in the desktop app. End your guidance at that point; the desktop coding agent will continue from the handoff prompt.
 ```
 
 You can also follow the pages yourself. The instructions are the same.
@@ -65,7 +65,7 @@ The result is not published to the web, no website account is needed, and the ex
 1. Install the desktop app that matches your subscription.
 2. Sign in with the same account you already use.
 3. Give the app access to one new, empty project folder.
-4. Hand the setup conversation to the local coding agent.
+4. End the setup conversation and switch to the local coding agent in the desktop app.
 5. Install Node.js with its normal graphical installer if it is missing.
 6. Build and revise your personal start page.
 

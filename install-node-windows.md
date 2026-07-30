@@ -49,7 +49,7 @@ Use x64 for an Intel or AMD PC. Use ARM64 for an ARM-based PC such as a Snapdrag
 
 ## 4. Return to the desktop agent
 
-Paste this short message into Codex or Claude Code:
+Return to the same local Codex or Claude Code conversation. Do not send this message to the old setup conversation. Paste:
 
 ```text
 The official Node.js Windows MSI installer finished successfully. Please check `node --version` and `npm.cmd --version` again. Do not install or upgrade anything else.

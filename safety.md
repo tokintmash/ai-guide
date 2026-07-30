@@ -51,6 +51,8 @@ Ask the agent what the action does, why it is needed, and what the safer alterna
 
 For the first projects, use **Ask for approval** in Codex or **Manual** in Claude Code. These modes are not identical: Claude Manual asks before edits and commands, while Codex can perform routine work inside the selected folder without asking each time. Review the visible result and the app's record of file changes. Do not enable a less restrictive mode.
 
+Use only one local-agent conversation for a project at a time. Before starting another conversation for `my-start-page`, tell the current agent to stop or wait and confirm that it has no task or local server still running.
+
 An agent may make a confident mistake. You remain responsible for decisions that affect accounts, money, private information, other people, or important files.
 
 <div class="notice">

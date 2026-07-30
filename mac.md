@@ -26,5 +26,5 @@ There is no model or provider decision to make. Continue with the subscription a
 </div>
 
 <div class="assistant-note">
-If you are guiding the user, choose the route that matches you: ChatGPT goes to Codex; Claude goes to Claude Code. Give one action at a time and do not ask the user to operate Terminal.
+If you are guiding the user, choose the route that matches you: ChatGPT goes to Codex; Claude goes to Claude Code. Give one action at a time and do not ask the user to operate Terminal. Your role ends when the local workspace is ready: explicitly tell the user to switch to the Codex or Claude Code conversation in the desktop app, then stop.
 </div>

@@ -15,7 +15,7 @@ description: Install Claude Desktop and open a safe local Claude Code workspace 
 </div>
 
 <div class="assistant-note">
-Guide the user through one numbered section at a time and wait for confirmation. Do not ask the user to open Terminal. If a label differs from this page, ask the user to describe what they see rather than guessing. Stop if the download is not from <strong>claude.com</strong> or <strong>claude.ai</strong>.
+Guide the user through one numbered section at a time and wait for confirmation. Do not ask the user to open Terminal. If a label differs from this page, ask the user to describe what they see rather than guessing. Stop if the download is not from <strong>claude.com</strong> or <strong>claude.ai</strong>. After the user confirms the section 4 checkpoint, tell them to stop using this setup conversation, switch to the Code conversation in Claude Desktop, and paste the next page's handoff prompt there. Then end your guidance; do not continue into the handoff or first project.
 </div>
 
 Claude Code is the **Code** workspace inside Claude Desktop. The command-line version of Claude Code is not needed for this guide.
@@ -79,7 +79,7 @@ Claude uses `my-start-page` as its working directory, but it is not a hard files
 </div>
 
 <div class="next-step">
-  <h2>Move into the local agent</h2>
-  <p>The browser assistant has finished its part. The next page contains the handoff prompt for Claude Code.</p>
+  <h2>Switch to Code in the desktop app</h2>
+  <p>Stop using the setup-assistant conversation now; its role is finished. In Claude Desktop, switch to the Code conversation with <code>my-start-page</code> selected. The next page contains the prompt to paste there. Do not paste it into ordinary Claude Chat.</p>
   <a class="button" href="https://tokintmash.github.io/ai-guide/handoff/">Continue to the handoff</a>
 </div>

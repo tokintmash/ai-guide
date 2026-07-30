@@ -8,7 +8,7 @@ description: Plain-language fixes for common Codex, Claude Code, Node.js, Mac, a
 
 # Get unstuck
 
-Describe what you see to the assistant that is guiding you. Include the exact wording of an error, but remove email addresses, account details, file contents, and other private information first.
+Before the handoff, describe what you see to the setup assistant. After the handoff, ask only the local Codex or Claude Code conversation. Do not ask both assistants to solve the same problem. Include the exact wording of an error, but remove email addresses, account details, file contents, and other private information first.
 
 ## I cannot find Codex in ChatGPT
 

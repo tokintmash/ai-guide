@@ -15,11 +15,11 @@ If a user gives you this repository and asks for help setting up an agentic envi
 7. Use only the official download pages linked by the guide.
 8. Do not substitute a CLI, Homebrew, winget, WSL, version manager, shell script, API account, or third-party application.
 9. Keep local work inside the single selected folder named `my-start-page`.
-10. After the desktop agent is ready, continue with [the raw handoff guide](https://raw.githubusercontent.com/tokintmash/ai-guide/main/handoff.md), then [the raw first-project guide](https://raw.githubusercontent.com/tokintmash/ai-guide/main/first-project.md).
+10. When the user confirms that the local desktop workspace is ready, explicitly tell them to stop using your setup conversation and switch to the Codex or Claude Code conversation in the desktop app. Send them to [the handoff guide](https://tokintmash.github.io/ai-guide/handoff/), then end your guidance. Do not perform, paraphrase, or continue into the handoff, Node.js check, or first project; the separate desktop coding agent owns those steps.
 
 If screen labels differ, ask the user to describe what they see. Do not invent a button or skip verification.
 
-If Node.js is missing, use the raw graphical-install guide for [Mac](https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-mac.md) or [Windows](https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-windows.md). The [raw safety rules](https://raw.githubusercontent.com/tokintmash/ai-guide/main/safety.md) and [raw troubleshooting page](https://raw.githubusercontent.com/tokintmash/ai-guide/main/troubleshooting.md) are also directly fetchable.
+After the handoff, if the desktop coding agent reports that Node.js is missing, the user follows the graphical-install guide for [Mac](https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-mac.md) or [Windows](https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-windows.md) and then returns to that same local-agent conversation. The [raw safety rules](https://raw.githubusercontent.com/tokintmash/ai-guide/main/safety.md) and [raw troubleshooting page](https://raw.githubusercontent.com/tokintmash/ai-guide/main/troubleshooting.md) are also directly fetchable.
 
 ## Human starting points
 
@@ -52,7 +52,7 @@ This edition assumes an existing subscription and does not compare plan availabi
 7. Select the default branch and the root (`/`) folder.
 8. Save and wait for GitHub to display the public site address.
 
-The repository URL itself is enough for an AI assistant because this README contains direct plain-text links to every route and handoff page it needs.
+The repository URL is enough for the setup assistant to choose a route. The handoff page gives the separate desktop coding agent the constraints and context it needs for the later steps.
 
 The included `_config.yml` assumes the repository is named `ai-guide`. If you publish a copy under another account, repository name, or domain, update `baseurl` and the canonical `tokintmash` URLs in the Markdown and `llms.txt`.
 

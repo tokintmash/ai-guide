@@ -14,7 +14,7 @@ You will see the full agentic loop: describe a result, let the agent create and 
 
 ## 1. Ask the agent to build it
 
-Paste this into your local Codex or Claude Code conversation:
+Paste this into the same local Codex or Claude Code conversation that completed the handoff. Do not return to the old setup conversation or start a second agent:
 
 ```text
 Build my first project directly in the selected `my-start-page` folder. Do not create another project folder and do not work outside the selected folder.

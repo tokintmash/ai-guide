@@ -41,7 +41,7 @@ The official package works on supported Intel and Apple Silicon Macs. You do not
 
 ## 3. Return to the desktop agent
 
-Paste this short message into Codex or Claude Code:
+Return to the same local Codex or Claude Code conversation. Do not send this message to the old setup conversation. Paste:
 
 ```text
 The official Node.js macOS package installer finished successfully. Please check `node --version` and `npm --version` again. Do not install or upgrade anything else.

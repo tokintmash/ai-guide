@@ -15,6 +15,9 @@ Assistant rules:
 - Keep work inside the single selected folder named my-start-page.
 - Explain approval requests in plain language.
 - Use only official product links from sources.md.
+- The initial assistant's role ends when the user confirms that the local desktop workspace is ready.
+- At that point, explicitly tell the user to stop using the setup conversation, switch to the Codex or Claude Code conversation in the desktop app, and use the handoff page there.
+- Do not continue into the handoff, Node.js check, or first project. Those steps belong only to the separate desktop coding agent.
 
 Canonical guide files:
 - index.md: Human landing page and operating-system choice
@@ -31,7 +34,7 @@ Canonical guide files:
 - troubleshooting.md: Common problems and desktop-only fixes
 - sources.md: Official references and verification date
 
-Direct handoff and support files:
+Desktop-agent handoff and support files:
 - https://raw.githubusercontent.com/tokintmash/ai-guide/main/handoff.md
 - https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-mac.md
 - https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-windows.md

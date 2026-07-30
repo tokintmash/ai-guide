@@ -15,7 +15,7 @@ description: Install Git for Windows and Claude Desktop, then open a local Code 
 </div>
 
 <div class="assistant-note">
-Guide one numbered section at a time and wait for confirmation. Never ask the user to open PowerShell, Command Prompt, Windows Terminal, Git Bash, or WSL. If a label differs, ask what they see. Use only the official downloads linked below; stop for any other source.
+Guide one numbered section at a time and wait for confirmation. Never ask the user to open PowerShell, Command Prompt, Windows Terminal, Git Bash, or WSL. If a label differs, ask what they see. Use only the official downloads linked below; stop for any other source. After the user confirms the section 5 checkpoint, tell them to stop using this setup conversation, switch to the Code conversation in Claude Desktop, and paste the next page's handoff prompt there. Then end your guidance; do not continue into the handoff or first project.
 </div>
 
 Claude Code's **Code** workspace runs directly in Claude Desktop. Local Windows sessions require Git for Windows, but not command-line Claude or WSL.
@@ -94,7 +94,7 @@ If you see an upgrade message instead of Code, first check that the app is using
 </div>
 
 <div class="next-step">
-  <h2>Move into the local agent</h2>
-  <p>The next page asks Claude Code to check Node.js and npm now that the desktop agent and workspace are ready.</p>
+  <h2>Switch to Code in the desktop app</h2>
+  <p>Stop using the setup-assistant conversation now; its role is finished. In Claude Desktop, switch to the Code conversation with <code>my-start-page</code> selected. The next page contains the prompt to paste there. Do not paste it into ordinary Claude Chat.</p>
   <a class="button" href="https://tokintmash.github.io/ai-guide/handoff/">Continue to the handoff</a>
 </div>
