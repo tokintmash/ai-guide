@@ -17,16 +17,36 @@ You will see the full agentic loop: describe a result, let the agent create and 
 Paste this into your local Codex or Claude Code conversation:
 
 ```text
-Build my first project directly in the selected `my-start-page` folder. Do not create another project folder.
+Build my first project directly in the selected `my-start-page` folder. Do not create another project folder and do not work outside the selected folder.
 
-Before writing files, ask me these three things, one question at a time:
+Before writing files, ask me these three questions, one at a time:
+
 1. What title should appear on the page?
-2. Which 3-6 links should it include?
+2. Which 3–6 links should it include? Ask for each link’s name and web address. If I describe link categories instead, choose suitable links and tell me what you chose.
 3. Should it feel calm, colorful, or minimal?
 
-After I answer, build a polished personal start page using plain HTML, CSS, and JavaScript. Make it work well on both a laptop and a phone-sized screen. Do not use frameworks, external fonts, analytics, or third-party packages.
+After I answer all three questions, build a polished personal start page using plain HTML, CSS, and JavaScript. Make it work well on both laptop and phone-sized screens.
 
-Add a very small local server in a file named `server.mjs` using only Node.js built-in features. Make the server listen only on `127.0.0.1` so other devices on my network cannot reach it. Start it directly with `node server.mjs`; do not use npm, npx, or a package script to start it. Test that the site loads and show me the local preview. Keep all files inside `my-start-page`. Explain any approval request in plain language before asking me to accept it.
+Do not use frameworks, external fonts, analytics, third-party packages, or remotely hosted page assets.
+
+Add a very small local server named `server.mjs` using only Node.js built-in features. It must:
+
+- Serve files only from the selected `my-start-page` folder.
+- Listen on `127.0.0.1` only, so other devices on my network cannot reach it.
+- Use port 3000.
+- Return appropriate content types and a proper 404 response.
+
+Start the server in a persistent, non-blocking terminal or preview session using exactly:
+
+node server.mjs
+
+Keep the server running independently so the chat remains responsive. Do not run it as a blocking foreground command.
+
+Then test http://127.0.0.1:3000, verify that the page and its local assets load successfully, check both laptop and phone-sized layouts, and show me the local preview.
+
+If port 3000 is already occupied, identify the process first. Do not stop an unrelated process without asking me.
+
+Explain any approval request in plain language before asking me to accept it.
 ```
 
 ## 2. Review the plan and approvals
