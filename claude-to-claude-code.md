@@ -9,7 +9,7 @@ description: Install Claude Desktop and open a safe local Claude Code workspace 
 # From Claude to Claude Code
 
 <div class="status-line">
-  <span>Last checked: 27 July 2026</span>
+  <span>Last checked: 30 July 2026</span>
   <span>Guide requires: macOS 13.5 or later</span>
   <span>Uses: Code in Claude Desktop</span>
 </div>
@@ -30,18 +30,9 @@ This guide's first project uses the current Node.js LTS release, which requires 
 
 You do not need to identify whether the Mac has an Intel or Apple processor. Claude's official Mac installer supports both.
 
-## 2. Make a folder for the first project
+**You know it worked when:** About This Mac shows macOS 13.5 or later.
 
-1. Open **Finder**.
-2. Select **Documents** in the sidebar.
-3. Choose **File > New Folder** from the menu bar.
-4. Name the folder `Agent Projects`.
-5. Open `Agent Projects` and create another new folder inside it.
-6. Name the new folder `my-start-page`.
-
-Claude Code will use `my-start-page` as its working directory. Manual mode asks before edits and commands, but the selected folder is not a hard filesystem sandbox. Reject any request to reach outside it unless you understand and approve the reason. For future projects, make and select a separate folder for each one.
-
-## 3. Install the official app
+## 2. Install the official app
 
 <a class="button" href="https://claude.com/download">Open the official Claude download page</a>
 
@@ -53,7 +44,9 @@ Claude Code will use `my-start-page` as its working directory. Manual mode asks 
 
 If Claude is already installed, open it and install any offered update instead.
 
-## 4. Sign in
+**You know it worked when:** Claude opens from Applications.
+
+## 3. Sign in
 
 1. Sign in with the same Claude account as your subscription.
 2. Complete any browser sign-in requested by the app.
@@ -62,14 +55,18 @@ If Claude is already installed, open it and install any offered update instead.
 
 If you see an upgrade message instead of Code, first check that the app is using the same account as your Claude subscription.
 
-## 5. Open Claude Code in your safe folder
+**You know it worked when:** the **Code** workspace opens in Claude Desktop.
+
+## 4. Open Claude Code and make the project folder
 
 1. In **Code**, choose **Local**.
 2. Select **Select folder**.
-3. Choose **Documents > Agent Projects > my-start-page**.
-4. Keep the permission mode on **Manual**.
+3. In the folder window, select **Documents** in the sidebar. It may appear in **Favorites** or under **iCloud**, depending on the Mac's iCloud settings. Do not type a location.
+4. Use **New Folder** in that window to make a folder named `Agent Projects`, then open it.
+5. Make another new folder named `my-start-page`, then select only that folder.
+6. Keep the permission mode on **Manual**.
 
-Manual mode lets you review proposed file changes and commands before they happen.
+Claude uses `my-start-page` as its working directory, but it is not a hard filesystem sandbox. Anthropic says **Code** has direct access to local files; **Manual** controls approvals and asks before edits and commands. Selecting one empty project folder keeps the intended scope clear. Reject requests to reach outside it unless you understand the reason.
 
 <div class="notice">
   <strong>Optional Mac permissions are not needed.</strong>
@@ -77,8 +74,8 @@ Manual mode lets you review proposed file changes and commands before they happe
 </div>
 
 <div class="checkpoint">
-  <strong>Checkpoint</strong>
-  You should now see a Code conversation with <code>my-start-page</code> as its selected folder and the permission mode set to Manual. Do not paste the setup prompt into ordinary Claude Chat; paste it into Code.
+  <strong>What success looks like</strong>
+  You see a Code conversation with <code>my-start-page</code> as its selected folder and <strong>Manual</strong> selected. Do not paste the setup prompt into ordinary Claude Chat; paste it into Code.
 </div>
 
 <div class="next-step">

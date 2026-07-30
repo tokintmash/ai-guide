@@ -9,7 +9,7 @@ description: Install the ChatGPT desktop app and open a safe local Codex workspa
 # From ChatGPT to Codex
 
 <div class="status-line">
-  <span>Last checked: 27 July 2026</span>
+  <span>Last checked: 30 July 2026</span>
   <span>Requires: macOS 14 or later</span>
   <span>Uses: ChatGPT desktop app</span>
 </div>
@@ -30,22 +30,13 @@ Continue if it is macOS 14 or later. If it is older, use **System Settings > Gen
 
 You do not need to identify whether the Mac has an Intel or Apple processor. The official download page handles that choice.
 
-## 2. Make a folder for the first project
+**You know it worked when:** About This Mac shows macOS 14 or later.
 
-1. Open **Finder**.
-2. Select **Documents** in the sidebar.
-3. Choose **File > New Folder** from the menu bar.
-4. Name the folder `Agent Projects`.
-5. Open `Agent Projects` and create another new folder inside it.
-6. Name the new folder `my-start-page`.
-
-Codex will receive access to `my-start-page`, not the whole Documents folder or even the parent `Agent Projects` folder. For future projects, make and select a separate folder for each one.
-
-## 3. Install the official app
+## 2. Install the official app
 
 <a class="button" href="https://chatgpt.com/download/">Open the official ChatGPT download page</a>
 
-1. Download the app for macOS.
+1. On the official page, choose the macOS download for the current ChatGPT desktop app. Do not choose **ChatGPT Classic** or an unofficial app.
 2. Open the downloaded disk image from the Downloads folder.
 3. If a window asks you to move ChatGPT into **Applications**, do so.
 4. Open **Applications** in Finder, then open **ChatGPT**.
@@ -53,7 +44,9 @@ Codex will receive access to `my-start-page`, not the whole Documents folder or 
 
 If ChatGPT is already installed, open it and install any offered update instead.
 
-## 4. Sign in
+**You know it worked when:** the current ChatGPT app opens from Applications.
+
+## 3. Sign in
 
 1. Select **Continue to sign in**.
 2. Complete sign-in in the browser window that opens.
@@ -62,16 +55,20 @@ If ChatGPT is already installed, open it and install any offered update instead.
 
 Do not choose API-key authentication. API keys use separate billing and are not needed for this guide.
 
-## 5. Open Codex in your safe folder
+**You know it worked when:** the app returns from the browser and its profile menu shows the account you signed into.
 
-1. Open **Codex** in the ChatGPT desktop app.
-2. Choose the option to create or open a local project.
-3. Select **Documents > Agent Projects > my-start-page** as its folder.
-4. Keep the permission setting on **Ask for approval**.
+## 4. Open Codex and make the project folder
 
-The precise button wording may change as the app is updated. The important result is a local Codex conversation whose selected folder is `my-start-page`.
+1. Select **Codex** in the ChatGPT desktop app.
+2. Open **Projects** and choose the option to add a local project.
+3. In the folder window, select **Documents** in the sidebar. It may appear in **Favorites** or under **iCloud**, depending on the Mac's iCloud settings. Do not type a location.
+4. Use **New Folder** in that window to make a folder named `Agent Projects`, then open it.
+5. Make another new folder named `my-start-page`, then select only that folder.
+6. Keep the permission setting on **Ask for approval**.
 
-**Ask for approval does not mean Codex asks before every file change.** It can normally create and edit files and run routine commands inside the selected folder. It asks before actions such as using the network or reaching outside that folder. Selecting one empty project folder keeps that automatic access narrow.
+If the project control has different wording, choose the option that opens a local folder. The important result is a local Codex project with only `my-start-page` attached.
+
+**Selecting only `my-start-page` keeps Codex's automatic write access narrow.** With **Ask for approval**, Codex's macOS sandbox can read files, edit inside the workspace, and run routine local commands without pausing. It asks before editing outside the workspace or letting a command use the network. The workspace is primarily a write boundary, not a promise that every other readable file is hidden.
 
 <div class="notice">
   <strong>Optional Mac permissions are not needed.</strong>
@@ -79,8 +76,8 @@ The precise button wording may change as the app is updated. The important resul
 </div>
 
 <div class="checkpoint">
-  <strong>Checkpoint</strong>
-  You should now see a new Codex conversation with <code>my-start-page</code> as its local folder. Do not paste the setup prompt into ordinary ChatGPT chat; paste it into this Codex conversation.
+  <strong>What success looks like</strong>
+  You see a new Codex conversation with only <code>my-start-page</code> attached and <strong>Ask for approval</strong> selected. Do not paste the setup prompt into ordinary ChatGPT chat; paste it into this Codex conversation.
 </div>
 
 <div class="next-step">

@@ -8,7 +8,7 @@ description: Official product documentation used to maintain the Agentic Desktop
 
 # Official sources
 
-The Windows Codex instructions were last reviewed on **29 July 2026**. Interfaces and requirements change, so check these sources before revising the guide.
+The Mac onboarding routes were last reviewed on **30 July 2026**; the Windows Codex route was last reviewed on **29 July 2026**. Interfaces and requirements change, so check these sources before revising the guide.
 
 ## OpenAI
 
@@ -21,6 +21,7 @@ The Windows Codex instructions were last reviewed on **29 July 2026**. Interface
 - [Codex authentication](https://developers.openai.com/codex/auth/)
 - [Codex projects and local folders](https://developers.openai.com/codex/projects/)
 - [Codex permission modes](https://developers.openai.com/codex/permission-modes/)
+- [Codex sandbox](https://developers.openai.com/codex/sandboxing/)
 
 ## Anthropic
 
@@ -29,7 +30,13 @@ The Windows Codex instructions were last reviewed on **29 July 2026**. Interface
 - [Deploy Claude Desktop for Windows](https://support.claude.com/en/articles/12622703-deploy-claude-desktop-for-windows)
 - [Claude Code desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart)
 - [Claude Code desktop reference](https://code.claude.com/docs/en/desktop)
+- [Claude Code permissions](https://code.claude.com/docs/en/permissions)
 - [Claude Code authentication](https://code.claude.com/docs/en/authentication)
+
+## macOS folders
+
+- [Desktop and Documents in iCloud Drive](https://support.apple.com/en-us/109344)
+- [Create folders on Mac](https://support.apple.com/guide/mac-help/organize-files-with-folders-mh26885/mac)
 
 ## Node.js
 
