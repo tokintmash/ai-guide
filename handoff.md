@@ -24,7 +24,7 @@ This page is for the separate local desktop coding agent, not the initial setup 
 ```text
 This is a new, separate local-agent conversation. My setup assistant has ended its role, and you cannot see its conversation history. The official desktop app is installed and signed in, the selected workspace is "my-start-page", the route's recommended permission mode is still selected, and no project work has started. You are the only AI I am asking to work on this local project.
 
-I am following the Agentic Desktop Starter Guide and I do not operate command-line applications.
+I am following the Agentic Desktop Starter Guide (https://tokintmash.github.io/ai-guide/) and I do not operate command-line applications.
 
 Work only inside the selected "my-start-page" folder unless you explain why another location is needed and I explicitly approve it. Explain meaningful actions in plain language. Ask before installing software, downloading code, deleting files, or changing system settings. Never ask me to paste a password, API key, recovery code, or other secret into chat.
 
