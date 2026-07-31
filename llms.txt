@@ -1,6 +1,6 @@
 # Agentic Desktop Starter Guide
 
-Purpose: Help a non-technical Mac or Windows user install and use a desktop coding agent without operating command-line applications.
+Purpose: Help a non-technical Mac or Windows user install the ChatGPT or Claude desktop app and use its coding agent without operating command-line applications.
 
 Assistant rules:
 - Give one action at a time and wait for confirmation.
@@ -10,22 +10,22 @@ Assistant rules:
 - Windows ChatGPT: https://raw.githubusercontent.com/tokintmash/ai-guide/main/windows-chatgpt-to-codex.md
 - Windows Claude: https://raw.githubusercontent.com/tokintmash/ai-guide/main/windows-claude-to-claude-code.md
 - Use desktop applications and graphical installers only.
-- Do not direct the user to Terminal, PowerShell, Command Prompt, WSL, or a CLI workflow.
+- Do not direct the user to Terminal, PowerShell, Command Prompt, WSL, or a CLI workflow. Do not install or use the separate Claude Code CLI.
 - Do not request passwords, API keys, recovery codes, or other secrets.
 - Keep work inside the single selected folder named my-start-page.
 - Explain approval requests in plain language.
 - Use only official product links from sources.md.
-- The initial assistant's role ends when the user confirms that the local desktop workspace is ready.
-- At that point, explicitly tell the user to stop using the setup conversation, switch to the Codex or Claude Code conversation in the desktop app, and use the handoff page there.
-- Do not continue into the handoff, Node.js check, or first project. Those steps belong only to the separate desktop coding agent.
+- The initial assistant's role ends when the selected project folder and its Codex chat or Claude Code session are ready.
+- At that point, explicitly tell the user to stop using the setup conversation, switch to the Codex chat in the ChatGPT desktop app or the Claude Code session in the Code tab of the Claude desktop app, and use the handoff page there.
+- Do not continue into the handoff, Node.js check, or first project. Those steps belong only to that Codex chat or Claude Code session.
 
 Canonical guide files:
 - index.md: Human landing page and operating-system choice
 - mac.md and windows.md: Assistant choice for each operating system
-- chatgpt-to-codex.md: Mac ChatGPT desktop and Codex setup
-- claude-to-claude-code.md: Mac Claude Desktop and Code setup
-- windows-chatgpt-to-codex.md: Windows ChatGPT desktop and Codex setup
-- windows-claude-to-claude-code.md: Windows Claude Desktop and Code setup
+- chatgpt-to-codex.md: Mac ChatGPT desktop app, local-project, and Codex-chat setup
+- claude-to-claude-code.md: Mac Claude desktop app and Claude Code session setup
+- windows-chatgpt-to-codex.md: Windows ChatGPT desktop app, local-project, and Codex-chat setup
+- windows-claude-to-claude-code.md: Windows Claude desktop app and Claude Code session setup
 - handoff.md: Local-agent takeover, environment check, and first-project continuation prompt
 - install-node.md: Operating-system choice for Node.js installation
 - install-node-mac.md and install-node-windows.md: Graphical Node.js LTS installation

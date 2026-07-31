@@ -14,9 +14,9 @@ You will see the full agentic loop: describe a result, let the agent create and 
 
 ## 1. Let the agent lead
 
-The handoff prompt tells the local agent to read this project brief and begin by asking what title should appear. Answer its questions in the same Codex or Claude Code conversation. Do not return to the old setup conversation or start a second agent.
+The handoff prompt tells the local agent to read this project brief and begin by asking what title should appear. Answer its questions in the same Codex chat or Claude Code session. Do not return to the old setup conversation or start a second agent.
 
-If the agent only reports that Node.js is ready and then waits, paste the recovery prompt below into that same local-agent conversation:
+If the agent only reports that Node.js is ready and then waits, paste the recovery prompt below into that same Codex chat or Claude Code session:
 
 ```text
 Take over as my guide and coding agent through completion of this project. Keep moving one clear step at a time. Whenever you need my input, ask exactly one current question or give one visible action and say what confirmation you need; do not wait for me to invent the next command.
@@ -57,7 +57,7 @@ Explain any approval request in plain language before asking me to accept it.
 
 ## 2. Review the plan and approvals
 
-The agent should first ask for your preferences. Claude in Manual mode should request permission before edits and commands. Codex may perform routine actions inside the selected folder without a separate approval. The expected actions are:
+The agent should first ask for your preferences. Claude Code in Manual mode should request permission before edits and commands. Codex may perform routine actions inside the selected folder without a separate approval. The expected actions are:
 
 - Create files inside the selected `my-start-page` folder.
 - Run Node to start a local web server.
@@ -99,11 +99,11 @@ When you are done, say:
 Stop the local server if it is still running. Then summarize what we made, tell me where the project files are, and explain how I can open and continue this project in a future session. Do not make any more changes.
 ```
 
-The files remain in **Documents > Agent Projects > my-start-page** in Finder or File Explorer. You can reopen that folder in Codex or Claude Code whenever you want to continue.
+The files remain in **Documents > Agent Projects > my-start-page** in Finder or File Explorer. To continue later, open that folder as a local project in the ChatGPT desktop app and start a Codex chat, or start a Claude Code session in the **Code** tab of the Claude desktop app and select that folder.
 
 <div class="checkpoint">
   <strong>You have completed the guide.</strong>
-  You installed a local agent, gave it a limited workspace, prepared a runtime, created working software, reviewed its actions, and requested a revision. That is the core agentic workflow.
+  You installed a desktop app, opened its local coding agent with a limited project folder, prepared a runtime, created working software, reviewed its actions, and requested a revision. That is the core agentic workflow.
 </div>
 
 ## Good next projects

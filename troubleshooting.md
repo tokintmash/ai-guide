@@ -8,32 +8,32 @@ description: Plain-language fixes for common Codex, Claude Code, Node.js, Mac, a
 
 # Get unstuck
 
-Before the handoff, describe what you see to the setup assistant. After the handoff, ask only the local Codex or Claude Code conversation. Do not ask both assistants to solve the same problem. Include the exact wording of an error, but remove email addresses, account details, file contents, and other private information first.
+Before the handoff, describe what you see to the setup assistant. After the handoff, ask only in the Codex chat in the ChatGPT desktop app or the Claude Code session in the **Code** tab of the Claude desktop app. Do not ask both assistants to solve the same problem. Include the exact wording of an error, but remove email addresses, account details, file contents, and other private information first.
 
 ## I cannot find Codex in ChatGPT
 
 1. Confirm you installed the current app from [the official ChatGPT download page](https://chatgpt.com/download/).
 2. Check for an app update.
-3. Confirm the app is signed into the same account and workspace as your subscription.
+3. Confirm the app is signed into the ChatGPT account and, if applicable, the managed ChatGPT workspace that has Codex access.
 4. Quit and reopen the app.
 
-The current app combines ChatGPT and Codex. Do not install an unofficial app with "Codex" in its name.
+The installed desktop app is named **ChatGPT** and includes Codex as a coding mode. Do not install an unofficial app with "Codex" in its name.
 
-## I cannot find Code in Claude Desktop
+## I cannot find the Code tab in Claude
 
 1. Confirm you installed the current app from [the official Claude download page](https://claude.com/download).
 2. Check that the app is signed into the account with Claude Code access.
 3. Install any offered app update.
 4. Quit and reopen Claude.
 
-Claude Chat and Claude Code are different workspaces in the same desktop app. This guide uses **Code**.
+The Claude desktop app has separate **Chat**, **Cowork**, and **Code** tabs. This guide uses the **Code** tab, where each coding conversation is a Claude Code session. It does not use the separate Claude Code CLI.
 
 ## Claude Code on Windows says Git is missing
 
 1. Download Git only from the [official Git for Windows page](https://git-scm.com/download/win).
 2. Run its graphical installer and keep the recommended options.
-3. Quit Claude Desktop completely after installation.
-4. Reopen Claude from the Start menu and return to Code.
+3. Fully quit the Claude app after installation. Closing only its window may leave it running in the Windows notification area.
+4. Reopen Claude from the Start menu and return to the **Code** tab.
 
 You do not need to open Git Bash or type a Git command. Claude Code uses Git behind the scenes.
 
@@ -43,7 +43,7 @@ Delete the download and return to the official download page linked by this guid
 
 ## My Mac is up to date but the version is too old
 
-Some older Macs cannot install the macOS version required by the current desktop agent or Node.js. If Software Update says the Mac is up to date but **About This Mac** still shows a version below the guide's requirement, stop here. This desktop-only edition has no safe fallback for that Mac.
+Some older Macs cannot install the macOS version required by the current ChatGPT or Claude desktop app or by Node.js. If Software Update says the Mac is up to date but **About This Mac** still shows a version below the guide's requirement, stop here. This desktop-only edition has no safe fallback for that Mac.
 
 ## Windows blocks the downloaded installer
 
@@ -70,9 +70,9 @@ Choose **Not Now**, **Deny**, or cancel. On Mac these may appear as Screen Recor
 ## Node is still missing after installation
 
 1. Confirm the macOS package installer or Windows MSI installer reported success.
-2. Quit the entire ChatGPT or Claude desktop app.
-3. On Mac, open the app again from Applications. On Windows, open it from the Start menu.
-4. Reopen the local workspace.
+2. On Mac, quit the entire ChatGPT or Claude desktop app. On Windows, open the hidden icons at the bottom-right of the taskbar, right-click the **ChatGPT** or **Claude** icon, and choose **Quit** or **Exit**; closing only the window may leave the app running.
+3. On Mac, open the app again from Applications. On Windows, open it from the Start menu. If Windows does not show the app icon or a Quit or Exit option, restart the computer instead.
+4. Return to the same Codex chat or Claude Code session.
 5. Ask the agent to repeat the Node and npm version checks for the current operating system.
 
 Do not install a second copy through another method. If the checks still fail, tell the agent whether you used the official `.pkg` or `.msi` and ask it to diagnose without changing anything.
@@ -97,7 +97,7 @@ On Windows, the first Node.js server may trigger a Windows Firewall dialog. This
 
 Starting the preview server should return control to the chat within about 10 seconds. If the app continues to show that the command is running and the agent does not respond, use the app's **Stop** control once. This may stop only the attached command, so the agent must check whether a server was left running before it tries again.
 
-Then send this in the same local-agent conversation:
+Then send this in the same Codex chat or Claude Code session:
 
 ```text
 The last server launch blocked the chat. First check whether your server is already listening on port 3000 and reuse it if it is. Otherwise, launch `node server.mjs` with the app's persistent background facility. On Windows, do not use `cmd.exe /c start`, `start /b`, or a foreground command. If needed, use one PowerShell `Start-Process` call with the absolute Node path, the project working directory, redirected output and error logs, and `-PassThru`. Make the launch return within 10 seconds, verify it with a separate bounded check, and then continue guiding me.

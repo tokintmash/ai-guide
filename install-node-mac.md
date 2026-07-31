@@ -41,7 +41,7 @@ The official package works on supported Intel and Apple Silicon Macs. You do not
 
 ## 3. Return to the desktop agent
 
-Return to the same local Codex or Claude Code conversation. Do not send this message to the old setup conversation. Paste:
+Return to the same Codex chat in the ChatGPT desktop app or Claude Code session in the **Code** tab of the Claude desktop app. Do not send this message to the old setup conversation. Paste:
 
 ```text
 The official Node.js macOS package installer finished successfully. Please check `node --version` and `npm --version` again. Do not install or upgrade anything else. When both checks pass, resume the Agentic Desktop Starter Guide where we left off and lead me into the first project; do not wait for me to provide another command.
@@ -51,7 +51,7 @@ If the agent still cannot find Node:
 
 1. Quit the ChatGPT or Claude desktop app completely.
 2. Open it again from Applications.
-3. Return to the local project or Code session.
+3. Return to the same Codex chat or Claude Code session.
 4. Ask it to repeat the two checks.
 
 Restarting the app allows it to see software that was installed after the app opened.

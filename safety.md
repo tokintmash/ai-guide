@@ -8,11 +8,11 @@ description: Five practical safety rules for beginning to work with a desktop co
 
 # Five safety rules
 
-A coding agent can create files and run software on your behalf. Treat its requests much as you would requests from a helpful but newly hired assistant: give it a clear workspace, review unusual actions, and keep secrets private.
+A coding agent can create files and run software on your behalf. Treat its requests much as you would requests from a helpful but newly hired assistant: give it a clear working folder, review unusual actions, and keep secrets private.
 
 ## 1. Start with one folder
 
-When your route tells you to prepare a workspace, create `Agent Projects`, then `my-start-page`, inside Documents. Select only `my-start-page` as the workspace. If Windows places Documents under OneDrive, do not select OneDrive itself. Do not select the parent folder, your entire user folder, Documents, a photo library, email, or password-manager data.
+When your route tells you to prepare a project folder, create `Agent Projects`, then `my-start-page`, inside Documents. Select only `my-start-page` as the project folder. If Windows places Documents under OneDrive, do not select OneDrive itself. Do not select the parent folder, your entire user folder, Documents, a photo library, email, or password-manager data.
 
 If the agent needs another file, copy a non-sensitive version into the project folder rather than granting broad access.
 
@@ -49,9 +49,9 @@ Ask the agent what the action does, why it is needed, and what the safer alterna
 
 ## 5. Keep a human decision point
 
-For the first projects, use **Ask for approval** in Codex or **Manual** in Claude Code. These modes are not identical: Claude Manual asks before edits and commands, while Codex can perform routine work inside the selected folder without asking each time. Review the visible result and the app's record of file changes. Do not enable a less restrictive mode.
+For the first projects, use **Ask for approval** in ChatGPT's Codex mode or **Manual** in the Code tab of the Claude desktop app. These modes are not identical: Claude Code's Manual mode asks before edits and commands, while Codex can perform routine work inside the selected folder without asking each time. Review the visible result and the app's record of file changes. Do not enable a less restrictive mode.
 
-Use only one local-agent conversation for a project at a time. Before starting another conversation for `my-start-page`, tell the current agent to stop or wait and confirm that it has no task or local server still running.
+Use only one Codex chat or Claude Code session for a project at a time. Before starting another chat or session for `my-start-page`, tell the current agent to stop or wait and confirm that it has no task or local server still running.
 
 An agent may make a confident mistake. You remain responsible for decisions that affect accounts, money, private information, other people, or important files.
 

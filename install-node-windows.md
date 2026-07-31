@@ -49,7 +49,7 @@ Use x64 for an Intel or AMD PC. Use ARM64 for an ARM-based PC such as a Snapdrag
 
 ## 4. Return to the desktop agent
 
-Return to the same local Codex or Claude Code conversation. Do not send this message to the old setup conversation. Paste:
+Return to the same Codex chat in the ChatGPT desktop app or Claude Code session in the **Code** tab of the Claude desktop app. Do not send this message to the old setup conversation. Paste:
 
 ```text
 The official Node.js Windows MSI installer finished successfully. Please check `node --version` and `npm.cmd --version` again. Do not install or upgrade anything else. When both checks pass, resume the Agentic Desktop Starter Guide where we left off and lead me into the first project; do not wait for me to provide another command.
@@ -58,14 +58,14 @@ The official Node.js Windows MSI installer finished successfully. Please check `
 If the agent still cannot find Node:
 
 1. At the bottom-right of the Windows taskbar, select the **Show hidden icons** up arrow. If there is no arrow, look for the app icon directly in that area.
-2. Right-click the **ChatGPT** or **Claude** icon and choose **Quit** or **Exit**. Closing only the app window is not enough because its agent may still be running in the notification area.
+2. Right-click the **ChatGPT** or **Claude** icon and choose **Quit** or **Exit**. Closing only the app window is not enough because the app may still be running in the background.
 3. Open the app again from the Start menu.
-4. Return to the same local project or Code session.
+4. Return to the same Codex chat or Claude Code session.
 5. Ask it to repeat the two checks.
 
-Fully quitting the app allows it to see the PATH update made by the installer. Opening only a new conversation or closing only the app window may not be enough.
+Fully quitting the app allows it to see the PATH update made by the installer. Opening only a new chat or session, or closing only the app window, may not be enough.
 
-If you cannot find the app's notification-area icon or a **Quit** or **Exit** option, restart the computer. Then reopen the app, return to the same conversation, and ask the agent to repeat the checks.
+If you cannot find the app's notification-area icon or a **Quit** or **Exit** option, restart the computer. Then reopen the app, return to the same Codex chat or Claude Code session, and ask the agent to repeat the checks.
 
 <div class="checkpoint">
   <strong>Checkpoint</strong>

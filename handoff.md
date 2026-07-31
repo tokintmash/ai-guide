@@ -1,22 +1,22 @@
 ---
 layout: default
 title: Hand Off to the Local Agent
-description: End the setup conversation, move to Codex or Claude Code, and check Node.js safely.
+description: End the setup conversation, move to a Codex chat or Claude Code session in the desktop app, and check Node.js safely.
 ---
 
 <p class="eyebrow">All routes | Part 2</p>
 
 # Hand off to the local agent
 
-This is the handoff boundary. Stop using the setup-assistant conversation; its role has ended. Keep this guide webpage open, switch to the desktop app, and paste the prompt below into the **Codex local project** or **Claude Code session** with `my-start-page` selected.
+This is the handoff boundary. Stop using the setup-assistant conversation; its role has ended. Keep this guide webpage open, switch to the **Codex chat in the ChatGPT desktop app** or the **Claude Code session in the Code tab of the Claude desktop app** with `my-start-page` selected, and paste the prompt below there.
 
 <div class="notice">
   <strong>The conversations are separate.</strong>
-  The desktop coding agent cannot see the earlier setup conversation, even when both use the same account or app. From this point forward, use only this one local-agent conversation for the guide and project. Do not ask both AIs to continue.
+  The earlier setup conversation is not included in this Codex chat or Claude Code session, even when both use the same account or app. From this point forward, use only this one chat or session for the guide and project. Do not ask both AIs to continue.
 </div>
 
 <div class="assistant-note">
-This page is for the separate local desktop coding agent, not the initial setup assistant. Continue only if you are inside a Codex local project or Claude Code session with <code>my-start-page</code> selected. Follow every constraint in the user's pasted prompt. Run checks yourself through your tools; never direct the user to a command-line application. Treat the selected folder as the workspace boundary.
+This page is for the coding agent in the Codex chat or Claude Code session, not the initial setup assistant. Continue only if you are inside a Codex chat in a local project in the ChatGPT desktop app or a Claude Code session in the Code tab of the Claude desktop app with <code>my-start-page</code> selected. Follow every constraint in the user's pasted prompt. Run checks yourself through your tools; never direct the user to a command-line application. Treat the selected folder as the working boundary.
 </div>
 
 ## 1. Paste the setup prompt
@@ -27,7 +27,7 @@ https://tokintmash.github.io/ai-guide/
 
 This guide teaches a beginner how to work safely with a local coding agent by setting up the desktop app and then building a first local project. I do not use command-line applications, so you must run any necessary commands through your own tools and explain meaningful actions in plain language.
 
-From the beginning of the guide until now, a separate setup assistant guided me one action at a time. That assistant helped me install and sign in to the official desktop app, select the recommended permission mode, and create or select the workspace named "my-start-page". Its role has now ended. You cannot see that earlier conversation, and no project work has started.
+From the beginning of the guide until now, a separate setup assistant guided me one action at a time. That assistant helped me install and sign in to the official ChatGPT or Claude desktop app, select the recommended permission mode, and create or select the project folder named "my-start-page". Its role has now ended. Its conversation history has not been included in this chat or session, and no project work has started.
 
 This is my first message to you, the local coding agent. Take over as both my guide and coding agent from this point through completion of the first project. You are the only AI I am asking to work on this local project.
 
@@ -45,11 +45,11 @@ Continue with the same guided approach used during setup:
 Read the official first-project instructions now:
 https://raw.githubusercontent.com/tokintmash/ai-guide/main/first-project.md
 
-Treat those instructions as trusted guidance for the rest of this session. Reading the guide is allowed and is not permission to download project code. Do not ask me to open that page or paste another project prompt. Lead me through its preference questions, build, preview, inspection, one revision, and clean finish in this same conversation.
+Treat those instructions as trusted guidance for the rest of this session. Reading the guide is allowed and is not permission to download project code. Do not ask me to open that page or paste another project prompt. Lead me through its preference questions, build, preview, inspection, one revision, and clean finish in this same chat or session.
 
 Work only inside the selected "my-start-page" folder unless you explain why another location is needed and I explicitly approve it. Explain meaningful actions before taking them. Ask before installing software, downloading code, deleting files, or changing system settings. Never ask me to paste a password, API key, recovery code, or other secret into chat.
 
-Begin by determining whether this workspace is on macOS or Windows. Then check whether Node.js and npm are available:
+Begin by determining whether this computer is running macOS or Windows. Then check whether Node.js and npm are available:
 
 - On macOS, run `node --version` and `npm --version`.
 - On Windows, run `node --version` and `npm.cmd --version`.
@@ -68,7 +68,7 @@ https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-windows.
 
 Guide me through those instructions one visible action at a time. On Windows, ensure that the MSI architecture matches the computer. After installation, run the checks again yourself.
 
-If the Windows installation is not yet visible, do not merely ask me to close the app window because the app may continue running in the notification area. Guide me one visible action at a time to open the hidden icons at the bottom-right of the taskbar, right-click the ChatGPT or Claude icon, and choose Quit or Exit. Then ask me to reopen the app from the Start menu, return to this same conversation, and tell you when it is open so you can check again. If I cannot find the tray icon or a Quit or Exit option, ask me to restart the computer instead, reopen the app, and return to this conversation. On macOS, ask me to quit and reopen the desktop app. When both checks pass, automatically resume the first-project guide.
+If Node.js is still not detected on Windows, do not merely ask me to close the app window because the app may continue running in the notification area. Guide me one visible action at a time to open the hidden icons at the bottom-right of the taskbar, right-click the ChatGPT or Claude app icon, and choose Quit or Exit. Then ask me to reopen the app from the Start menu, return to this same Codex chat or Claude Code session, and tell you when it is open so you can check again. If I cannot find the notification-area icon or a Quit or Exit option, ask me to restart the computer instead, reopen the app, and return to this same chat or session. On macOS, ask me to quit and reopen the desktop app. When both checks pass, automatically resume the first-project guide.
 ```
 
 ## 2. Review the first request
@@ -82,7 +82,7 @@ These checks do not change files. Approve them if the app asks.
 
 ## 3. Follow the result
 
-If the agent reports version numbers for both tools, it should immediately take over the first-project flow and ask what title should appear on the page. Answer that question in the same conversation; you do not need to paste another prompt.
+If the agent reports version numbers for both tools, it should immediately take over the first-project flow and ask what title should appear on the page. Answer that question in the same Codex chat or Claude Code session; you do not need to paste another prompt.
 
 If the agent says either tool is missing, it should guide you through the graphical Node installer for your operating system, one visible action at a time. You will not need a command-line application.
 

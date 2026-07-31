@@ -8,18 +8,18 @@ description: Official product documentation used to maintain the Agentic Desktop
 
 # Official sources
 
-The Mac onboarding routes were last reviewed on **30 July 2026**; the Windows Codex route was last reviewed on **29 July 2026**. Interfaces and requirements change, so check these sources before revising the guide.
+The Mac onboarding routes and Windows Claude route were last reviewed on **30 July 2026**; the Windows ChatGPT and Codex route was last reviewed on **29 July 2026**. Interfaces and requirements change, so check these sources before revising the guide.
 
 ## OpenAI
 
 - [Download ChatGPT](https://chatgpt.com/download/)
 - [ChatGPT macOS app requirements](https://help.openai.com/en/articles/9275200-using-the-chatgpt-macos-app)
-- [Codex app documentation](https://developers.openai.com/codex/app/)
-- [Codex on Windows](https://developers.openai.com/codex/windows/windows-app)
+- [ChatGPT desktop app and Codex documentation](https://developers.openai.com/codex/app/)
+- [ChatGPT desktop app for Windows](https://developers.openai.com/codex/windows/windows-app)
 - [Codex Windows sandbox](https://developers.openai.com/codex/windows/windows-sandbox)
 - [ChatGPT Windows deployment and installers](https://developers.openai.com/codex/enterprise/windows-deployment)
 - [Codex authentication](https://developers.openai.com/codex/auth/)
-- [Codex projects and local folders](https://developers.openai.com/codex/projects/)
+- [ChatGPT projects and Codex chats](https://developers.openai.com/codex/projects/)
 - [Codex permission modes](https://developers.openai.com/codex/permission-modes/)
 - [Codex sandbox](https://developers.openai.com/codex/sandboxing/)
 
@@ -28,8 +28,8 @@ The Mac onboarding routes were last reviewed on **30 July 2026**; the Windows Co
 - [Download Claude Desktop](https://claude.com/download)
 - [Install Claude Desktop](https://support.claude.com/en/articles/10065433-install-claude-desktop)
 - [Deploy Claude Desktop for Windows](https://support.claude.com/en/articles/12622703-deploy-claude-desktop-for-windows)
-- [Claude Code desktop quickstart](https://code.claude.com/docs/en/desktop-quickstart)
-- [Claude Code desktop reference](https://code.claude.com/docs/en/desktop)
+- [Claude Code in the desktop app quickstart](https://code.claude.com/docs/en/desktop-quickstart)
+- [Claude desktop app Code tab reference](https://code.claude.com/docs/en/desktop)
 - [Claude Code permissions](https://code.claude.com/docs/en/permissions)
 - [Claude Code authentication](https://code.claude.com/docs/en/authentication)
 

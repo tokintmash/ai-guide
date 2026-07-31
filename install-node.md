@@ -8,7 +8,7 @@ description: Choose the graphical Node.js LTS installer instructions for Mac or 
 
 # Install Node.js
 
-Choose the operating system on the computer where Codex or Claude Code is running. Both routes use the official graphical Node.js LTS installer and require no user-operated command line.
+Choose the operating system on the computer where the ChatGPT or Claude desktop app is running. Both routes use the official graphical Node.js LTS installer and require no user-operated command line.
 
 <div class="path-grid">
   <a class="path-card" href="https://tokintmash.github.io/ai-guide/install-node-mac/">
