@@ -57,12 +57,15 @@ The official Node.js Windows MSI installer finished successfully. Please check `
 
 If the agent still cannot find Node:
 
-1. Quit the ChatGPT or Claude desktop app completely.
-2. Open it again from the Start menu.
-3. Return to the local project or Code session.
-4. Ask it to repeat the two checks.
+1. At the bottom-right of the Windows taskbar, select the **Show hidden icons** up arrow. If there is no arrow, look for the app icon directly in that area.
+2. Right-click the **ChatGPT** or **Claude** icon and choose **Quit** or **Exit**. Closing only the app window is not enough because its agent may still be running in the notification area.
+3. Open the app again from the Start menu.
+4. Return to the same local project or Code session.
+5. Ask it to repeat the two checks.
 
-Restarting the whole app allows it to see the PATH update made by the installer. Opening only a new conversation may not be enough.
+Fully quitting the app allows it to see the PATH update made by the installer. Opening only a new conversation or closing only the app window may not be enough.
+
+If you cannot find the app's notification-area icon or a **Quit** or **Exit** option, restart the computer. Then reopen the app, return to the same conversation, and ask the agent to repeat the checks.
 
 <div class="checkpoint">
   <strong>Checkpoint</strong>

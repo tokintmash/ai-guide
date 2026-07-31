@@ -66,7 +66,9 @@ https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-mac.md
 Windows:
 https://raw.githubusercontent.com/tokintmash/ai-guide/main/install-node-windows.md
 
-Guide me through those instructions one visible action at a time. On Windows, ensure that the MSI architecture matches the computer. After installation, run the checks again yourself. If the installation is not yet visible, ask me to quit and reopen the desktop app, then check once more. When both checks pass, automatically resume the first-project guide.
+Guide me through those instructions one visible action at a time. On Windows, ensure that the MSI architecture matches the computer. After installation, run the checks again yourself.
+
+If the Windows installation is not yet visible, do not merely ask me to close the app window because the app may continue running in the notification area. Guide me one visible action at a time to open the hidden icons at the bottom-right of the taskbar, right-click the ChatGPT or Claude icon, and choose Quit or Exit. Then ask me to reopen the app from the Start menu, return to this same conversation, and tell you when it is open so you can check again. If I cannot find the tray icon or a Quit or Exit option, ask me to restart the computer instead, reopen the app, and return to this conversation. On macOS, ask me to quit and reopen the desktop app. When both checks pass, automatically resume the first-project guide.
 ```
 
 ## 2. Review the first request
