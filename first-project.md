@@ -42,7 +42,7 @@ Add a very small local server named `server.mjs` using only Node.js built-in fea
 
 Start the server with `node server.mjs` using the coding app's persistent background terminal or preview facility. The launch must return control to the chat promptly while the server keeps running.
 
-Never run the server as a blocking foreground tool call. On Windows, do not use `cmd.exe /c start`, `start /b`, or another wrapper that may keep the tool call attached to the server. If the app has no built-in background facility, use one PowerShell `Start-Process` call with the absolute path to `node.exe`, the selected folder as its working directory, standard output and error redirected to log files in that folder, and `-PassThru`; do not use `-UseNewEnvironment`. Record the returned process ID.
+Never run the server as a blocking foreground tool call. On Windows, do not use `cmd.exe /c start`, `start /b`, or another wrapper that may keep the tool call attached to the server. On Windows, if the app has no built-in background facility, use one PowerShell `Start-Process` call with the absolute path to `node.exe`, the selected folder as its working directory, standard output and error redirected to log files in that folder, and `-PassThru`; do not use `-UseNewEnvironment`. Record the returned process ID.
 
 The launch action must finish within 10 seconds. If it does not, cancel your own running command immediately instead of leaving the chat busy. If the new process exits, inspect its error log and fix the cause before trying another launch method. Before every retry, check whether your earlier server or port 3000 is already active.
 
